@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>sorting array in descending order</h1>
+    <button onclick="desc()">click</button>
+    <p id="demo"></p>
+    <script>
+        var toys =["car","bat","ball","ship","doll"];
+        document.getElementById("demo").innerHTML=toys;
+        function desc() {
+            toys.sort();
+            toys.reverse();
+            document.getElementById("demo").innerHTML=toys;
+        }
+
+    </script>
+
+</body>
+</html>
