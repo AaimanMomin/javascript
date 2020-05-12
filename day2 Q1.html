@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>MAXIMUM</h1>
+    <p id="demo"></p>
+    <script>
+        var array =[10,21,20,15,16,95,23,45,67,50];
+        document.getElementById("demo").innerHTML=array;
+        var max = array.reduce(function(a,b){
+            return Math.max(a,b);
+        });
+        document.write(max);
+    </script>
+</body>
+</html>
