@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<p id="demo"></p>
+Enter a Number: <input id="Demo1" type="text" >
+<input type="button" value="Get Factorial" onclick="factorial()">
+<h1 id="Demo2"></h1>
+<script>
+
+var factorial;
+factorial =(n)=>{
+var n= document.getElementById("Demo1").value;
+var f=1;
+for(var c=2;c<=n;c++)
+{
+f=f*c;
+}
+document.getElementById("Demo2").innerHTML=f;
+
+}
+
+</script>
+</html>
