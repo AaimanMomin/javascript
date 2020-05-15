@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script>
+    class Account{
+    constructor(name,balance)
+      {
+	  this.Name=name;
+	  this.Balance=balance;
+	  }
+	 Deposite(add)
+     {
+	 this.Balance+=add;
+	 }
+	
+    }
+	
+	class child extends Account
+	{
+	constructor(name,balance){
+	 super(name,balance);
+	 }
+	 Withdraw(sub)
+     {
+	 this.Balance-=sub;
+	 }
+	 show()
+	 {
+	 return this.Name +"is " + this.Balance;
+	 }
+	}
+	
+	user1 = new child("user1 ",10000)
+    user1.Deposite(5000);
+	user1.Withdraw(500);
+	document.write("Final amount of " + user1.show());
+	
+	</script>
+	</head>
+	</html>
