@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>JS</head>
+<body>
+<p id="em"></p>
+<p id="eid"></p>
+<input type ="button" value="check" onclick="find()"/>
+<script>
+var str ="abcd@gmail.com";
+var chk = str.search("@");
+document.getElementById("em").innerHTML=str;
+
+function find(){
+if(chk !=-1){
+document.getElementById("eid").innerHTML="@ is pressent";
+}
+else{
+document.getElementById("eid").innerHTML="invalid email";
+}
+}
+</script>
+</body>
+</html>
