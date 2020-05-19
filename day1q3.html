@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+Enter your name:<input type ="text" id="demo"><br/><br/>
+
+<button onclick="myFunction()">Font Style</button>
+<h1 id="h1"></h1>
+<h2 id="h2"></h2>
+<h3 id="h3"></h3>
+<h4 id="h4"></h4>
+<h5 id="h5"></h5>
+<script>
+function myFunction()
+{
+var name=document.getElementById("demo").value;
+document.getElementById("h1").innerHTML=name;
+document.getElementById("h2").innerHTML=name;
+document.getElementById("h3").innerHTML=name;
+document.getElementById("h4").innerHTML=name;
+document.getElementById("h5").innerHTML=name;
+}
+</script>
+
+</body>
+</html>
