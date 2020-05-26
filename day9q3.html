@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        Sum of numbers 2,6,5:
+        <script>
+          function add(){
+              var i,sum=0;
+              for (i=0;i<arguments.length;i++){
+                  sum += arguments[i];
+              }
+              return sum;
+          }
+          document.write(add(2,6,5));
+        </script>
+    </body>
+</html>
