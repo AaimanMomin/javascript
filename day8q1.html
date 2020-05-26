@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<htm1>
+    <body>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <script>
+            class Employee{
+                constructor(id,name,salary){
+                    this.id=id;
+                    this.name=name;
+                    this.salary=salary;
+                }
+                 get empid(){
+                     return this.id;
+                }
+                 set empid(x){
+                     this.id=x;
+                }
+                get empname(){
+                    return this.name;
+                }
+                set empname(x){
+                    this.name=x;
+                }
+                 get empsalary(){
+                    return this.salary;
+                }
+                 set empsalary(x){
+                    this.salary=x;
+                }
+                 get NET_SALARY(){
+                    var TDS = ((this.salary)*10)/100; 
+                    var res = this.salary-TDS; 
+                    return res ;
+                }
+  
+            }
+
+            emp1= new Employee(1,"emp1",10000);
+            emp2= new Employee(2,"emp2",20000);
+            document.getElementById("demo").innerHTML=emp1.empid + " " + emp1.empname + " " + emp1.NET_SALARY ;
+            document.getElementById("demo1").innerHTML=emp2.empid + " " + emp2.empname + " " + emp2.NET_SALARY ;
+        </script>
+    </body>
+</html>
