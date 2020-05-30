@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+    Password:<input type="text" id="demo" name="name" onchange="fun()"/>
+    <span style ="color:blue; font-weight: bold" id="demo1"></span> 
+    <script>
+        function fun(){
+            var x=document.getElementById("demo").value;
+
+            if(x.length>8){
+                
+            if (!(x.match(/[A-Z]/))){
+                document.getElementById("demo1").innerHTML="Error:enter atleast one uppercase";
+            }else
+             if(!(x.match(/[0-9]/))){
+            document.getElementById("demo1").innerHTML="Error:enter atleast one digit";
+            }else if(!(x.match(/[~,!,@,#,$,%,^,&,*,_,-,(,),/]/))){
+            document.getElementById("demo1").innerHTML="Error:enter atleast one special character";
+            }
+            else {
+                document.getElementById("demo1").innerHTML="Password strength: GOOD!";
+                document.getElementById("demo1").style.color='green';}
+            }
+            else {
+                document.getElementById("demo1").innerHTML="Error:enter atleast 8 characters";
+                }
+
+        }
+    </script>
+</body>
+</html>
