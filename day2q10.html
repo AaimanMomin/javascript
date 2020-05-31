@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>check mobile number</h2>
+        <p id="mb"></p>
+        <p id="chk"></p>
+        <input type="button" value="check" onclick="check()"/>
+        <script>
+            var ph="9874563215";
+            document.getElementById("mb").innerHTML=ph;
+            function check(){
+                if(ph.length == 10){
+                    document.getElementById("chk").innerHTML="valid number!";
+                }else{
+                    document.getElementById("chk").innerHTML="invalid!";
+                }          
+            }
+        </script>
+
+    </body>
+</html>
