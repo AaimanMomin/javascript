@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2 style="color: darkgoldenrod;"><u>Choose the book you want to buy</u></h2>
+       <!--<table><tr><th>Book</th><th>---<th>Price</th></table>-->
+    History 140 Rs<input type="checkbox" name="chk" value="140"  onchange="total()"/></br>
+    Science 180 Rs<input type="checkbox" name="chk" value="180"  onchange="total()"/></br>
+    Math 120 Rs<input type="checkbox" name="chk" value="120"  onchange="total()"/></br>
+   <!-- Total Price<input type="number" value="0" style="color:darkred;" id ="txt" name="cost"/>-->
+    <label>Total:</label><h3 id="txt"></h3>
+    <script>
+        
+        function total(){
+            var bill=0;
+            var input=document.getElementsByName("chk");
+            var len=input.length;
+            for(var i=0;i<len;i++){
+                if(input[i].checked){
+                    bill=bill+parseFloat(input[i].value);
+                }  
+            }
+            document.getElementById("txt").innerHTML=bill; 
+        } 
+    </script>
+
+    </body>
+</html>
