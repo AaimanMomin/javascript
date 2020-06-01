@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1 style="color: coral;"><u>Digital Watch</u></h1>
+        <h1 id="demo"></h1>
+        <script>
+            var myVar=setInterval(myTimer,1000);
+            function myTimer(){
+                var d= new Date();
+                document.getElementById("demo").innerHTML=d.toLocaleTimeString();
+            }
+        </script>
+    </body>
+</html>
